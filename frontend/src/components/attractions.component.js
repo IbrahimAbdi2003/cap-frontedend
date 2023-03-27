@@ -38,7 +38,7 @@ export default class Attractions extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/attractions/')
+    axios.get('https://queencitytour-api.onrender.com/attractions/')
       .then(response => {
         this.setState({ attractions: response.data, filteredAttractions: response.data });
       })
